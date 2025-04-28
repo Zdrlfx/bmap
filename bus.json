@@ -1,0 +1,86 @@
+[
+    {
+      "route_name": "Bagbazar - Bhaktapur Puraano Baato Route",
+      "start": "Bagbazar",
+      "end": "Dudhpati",
+      "stops": [
+        "Bagbazar",
+        "Maitighar",
+        "Buddhanagar",
+        "Naya Baneshwor",
+        "Minbhawan",
+        "Shantinagar",
+        "Tinkune",
+        "Koteshwor",
+        "Jadibuti",
+        "Pepsicola",
+        "Panika",
+        "Siddhikali Chowk",
+        "Bahakha Bazar",
+        "Radhe Radhe Chowk",
+        "Hindunagar Chowk",
+        "Dhungedhara Chowk",
+        "Sallaghari",
+        "Sainik",
+        "Dudhpati"
+      ]
+    },
+    {
+      "route_name": "Ratnapark-Chyamasing Route",
+      "start": "Ratnapark",
+      "end": "Chyamasing",
+      "stops": [
+        "Ratnapark",
+        "Bhadrakali",
+        "Singha Durbar",
+        "Maitighar",
+        "Buddhanagar",
+        "Naya Baneshwor",
+        "Minbhawan",
+        "Shantinagar",
+        "Tinkune",
+        "Koteshwor",
+        "Lokanthali",
+        "Kaushaltar",
+        "Gatthaghar",
+        "Chardobato",
+        "Thimi",
+        "Radhe Radhe",
+        "Srijananagar",
+        "Sallaghari",
+        "Chundevi",
+        "Ghalate",
+        "Suryabinayak",
+        "Aadarsha",
+        "Jagati",
+        "Chyamasing"
+      ]
+    },
+    {
+      "route_name": "Bagbazar - Kamalbinayak Route",
+      "start": "Bagbazar",
+      "end": "Kamalbinayak",
+      "stops": [
+        "Bagbazar",
+        "Maitighar",
+        "Buddhanagar",
+        "Naya Baneshwor",
+        "Minbhawan",
+        "Shantinagar",
+        "Tinkune",
+        "Koteshwor",
+        "Jadibuti",
+        "Lokanthali",
+        "Gatthaghar",
+        "Shrijananagar",
+        "Dudhpati",
+        "Kalo pati",
+        "Sano Byasi",
+        "Thulo Byasi",
+        "Dekocha",
+        "Kamalbinayak"
+      ]
+      
+    }
+  ]
+  
