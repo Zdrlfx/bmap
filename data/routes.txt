@@ -1,0 +1,41 @@
+#	Route Name
+1	Suryabinayak - Sanga Route
+2	Chyamasingh - Nala Route
+3	Kamalbinayak - Nagarkot Route
+4	Lagankhel - Bhaktapur Naya Baato Route
+5	Lagankhel - Bhaktapur Puraano Baato Route
+6	Lagankhel - Budhanilkantha Route
+7	Lagankhel - Gongabu Park Route
+8	Godavari - Ratnapark Route
+9	Lamatar - Ratnapark Route
+10	Thankot - Tribhuvan International Airport Route
+11	Thankot - Budhanilkantha Route
+12	Lele - Jamal Route
+13	Lagankhel - Lamatar Route
+14	Lagankhel - Chapagaun Route
+15	Lagankhel - Tikabhairab Route
+16	Bhaktapur - Purano Thimi - Purano Park Route
+17	Lagankhel - Naya Bus Park (Ringroad) Route
+18	Purano Bus Park - Chabahil Route
+19	Budhanilkantha School - Ratna Park Route
+20	Kalanki - TIA Airport Route
+21	Chakrapath Parikrama Route
+22	Gothatar - Purano Bus Park Route
+23	Kalanki - Pepsicola Route
+24	Kamalbinayak - Ratnapark Route
+25	Purano Bus Park - Sankhu Route
+26	Ratnapark - Chyamasingh Route
+27	Kaushaltar - Naikap Route
+28	Ratnapark - Changu Route
+29	Ratnapark - Panauti Route
+30	Purano Bus Park - Budhanilkantha Route
+31	Jorpati - Purano Bus Park Route
+32	Ratnapark - Sundarijal Route
+33	Gokarna - Chabahil - Naya Bus Park - Kalanki Route
+34	Nepal Yatayat - Balkumari - Gopi Krishna Route
+35	Ratnapark - Dakshinkali Route
+36	Attarkhel - Purano Bus Park Route
+37	Kalanki - Balkumari Route
+38	Purano Bus Park - Shivapuri Route
+39	Ratnapark - Dhulikhel Route
+40	Bagbazar - Kamalbinayak Route

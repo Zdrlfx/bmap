@@ -1,0 +1,24 @@
+Lagankhel - Bhaktapur Naya Baato Route
+Start: Lagankhel
+End: Kamalbinayak
+Stops: Lagankhel, Satdobato, Gwarko, Balkumari, Balkumari Bridge, Koteshor, Jadibuti, Lokanthali, Kaushaltar, Gathhaghar, Thimi, Radhe Radhe, Srijananagar, Sallaghari, Chundevi, Suryabinayak, Aadarsha, Jagati, Chyamasing, Kamalbinayak
+
+Lagankhel - Bhaktapur Puraano Baato Route
+Start: Lagankhel
+End: Dudhpati
+Stops: Lagankhel, Satdobato, Gwarko, Balkumari, Balkumari Bridge, Koteshor, Jadibuti, Saraswoti Nagar, Pepsicola, Panika, Siddhikali Chowk, Bahakha Bazaar, Radhe Radhe Chowk, Hindunagar Chowk, Dhungedhara Chowk, Sallaghari, Sainik, Cancer Hospital
+
+Bagbazar - Bhaktapur Puraano Baato Route
+Start: Bagbazar
+End: Dudhpati
+Stops: Bagbazar, Maitighar, Buddhanagar, Naya Baneshwor, Minbhawan, Shantinagar, Tinkune, Koteshwor, Jadibuti, Pepsicola, Panika, Siddhikali Chowk, Bahakha Bazar, Radhe Radhe Chowk, Hindunagar Chowk, Dhungedhara Chowk, Dudhpati
+
+Kamalbinayak - Ratnapark Route
+Start: Ratnapark
+End: Kamalbinayak
+Stops: Ratnapark, Bhadrakali, Singha Durbar, Maitighar, Buddhanagar, Naya Baneshwor, Minbhawan, Shantinagar, Tinkune, Koteshwor, Lokanthali, Gathaghar, Shrijananagar, Dudhpati, Byasi, Kamalbinayak
+
+Bagbazar - Kamalbinayak Route
+Start: Bagbazar
+End: Kamalbinayak
+Stops: Bagbazar, Bhadrakali, Singha Durbar, Maitighar, Buddhanagar, Naya Baneshwor, Minbhawan, Shantinagar, Tinkune, Koteshwor, Lokanthali, Gathaghar, Gaushala Chowk, Shrijananagar, Dudhpati, Byasi, Kamalbinayak
