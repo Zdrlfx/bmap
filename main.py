@@ -1,31 +1,69 @@
+import json
+from utils import get_coordinates, find_nearest_bus_stop, find_route
+
+
 # input origin and destination
 origin = input("Enter origin: ")
 destination = input("Enter destination: ")
+associated_routes = []
+is_ori_stop , is_dest_stop = False, False
 
 # check if destination is a bus stop and set destination to bus stop
-with open(bus.json, 'r', encoding='utf-8') as f:
-    bus_stops = json.load(f)
-    for stop in bus_stops:
-        if stop['name'].lower() == destination.lower():
-            destination = stop['name']
-            is_stop = True
+with open("routes.json", 'r', encoding='utf-8') as f:
+    routes = json.load(f)
+    for route in routes:
+        for stop in route['stops']:
+            if stop['name'].lower() == destination.lower():
+                destination = stop['name']  # Get exact casing
+                is_dest_stop = True
+                break
+        if is_dest_stop:
             break
 
-if not is_stop:
-    # get coordinates of destination
-    coords = get_coordinates(destination)
-    if coords:
-        nearest_stop = find_nearest_bus_stop(coords[0], coords[1])
-        if nearest_stop:
-            destination = nearest_stop['name']
-            print(f"✅ Nearest bus stop to {destination} is {nearest_stop['name']}")
+    if not is_dest_stop:
+        # get coordinates of destination
+        coords = get_coordinates(destination)
+        if coords:
+            nearest_stop = find_nearest_bus_stop(coords[0], coords[1], routes)
+            if nearest_stop:
+                destination = nearest_stop['name']
+                print(f"✅ Nearest bus stop to {destination} is {nearest_stop['name']}")
+            else:
+                print("❌ Could not find nearest bus stop.")
         else:
-            print("❌ Could not find nearest bus stop.")
-    else:
-        print("❌ Could not find coordinates for the place.")
+            print("❌ Could not find coordinates for the place.")
 
-# find routes containing destination 
+    # find routes containing destination 
+    for route in routes:
+        for stop in route['stops']:
+            if stop['name'].lower() == destination.lower():
+                associated_routes.append(route)
+                break
+        
+    # check if origin is in routes of destination
+    for route in associated_routes:
+        for stop in route['stops']:
+            if stop['name'].lower() == origin.lower(): 
+                is_ori_stop = True
+                break
 
-# check if origin is in routes of destination
-# if not find nearest stop from routes of destination
-# get route
+    # if not find nearest stop from routes of destination
+    if not is_ori_stop:
+        # get coordinates of origin
+        coords = get_coordinates(origin)
+        if coords:
+            nearest_stop = find_nearest_bus_stop(coords[0], coords[1], associated_routes)
+            if nearest_stop:
+                origin = nearest_stop['name']
+                print(f"✅ Nearest bus stop to {origin} is {nearest_stop['name']}")
+            else:
+                print("❌ Could not find nearest bus stop.")
+        else:
+            print("❌ Could not find coordinates for the place.")
+
+    # get route
+    final_routes = find_route(origin, destination, routes)
+    print("Final Routes:")
+    for route in final_routes:
+        print(f"Route Name: {route['route_name']}")
+    
