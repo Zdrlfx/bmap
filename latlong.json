@@ -1,0 +1,211 @@
+[
+    {
+        "name": "Bagbazar",
+        "lat": 27.70564,
+        "lon": 85.31696
+    },
+    {
+        "name": "Maitighar",
+        "lat": 27.69398,
+        "lon": 85.32130
+    },
+    {
+        "name": "Buddhanagar",
+        "lat": 27.68898,
+        "lon": 85.33129
+        
+    },
+    {
+        "name": "Naya Baneshwor",
+        "lat": 27.68833,
+        "lon": 85.33485
+    },
+    {
+        "name": "Minbhawan",
+        "lat": 27.68755,
+        "lon": 85.33578
+    },
+    {
+        "name": "Shantinagar",
+        "lat": 27.68687,
+        "lon": 85.34306
+    },
+    {
+        "name": "Tinkune",
+        "lat": 27.68622,
+        "lon": 85.34569
+    },
+    {
+        "name": "Koteshwor",
+        "lat": 27.67989,
+        "lon": 85.34942
+    },
+    {
+        "name": "Jadibuti",
+        "lat": 27.67562,
+        "lon": 85.35137
+    },
+    {
+        "name": "Pepsicola",
+        "lat": 27.68905,
+        "lon": 85.36026
+    },
+    {
+        "name": "Panika",
+        "lat": 27.68268,
+        "lon": 85.37231
+    },
+    {
+        "name": "Siddhikali Chowk",
+        "lat": 27.68231,
+        "lon": 85.38319
+    },
+    {
+        "name": "Bahakha Bazar",
+        "lat": 27.68308,
+        "lon": 85.38636
+    },
+    {
+        "name": "Radhe Radhe Chowk",
+        "lat": 27.68017,
+        "lon": 85.39828
+    },
+    {
+        "name": "Hindunagar Chowk",
+        "lat": 27.67945,
+        "lon": 85.40116
+    },
+    {
+        "name": "Dhungedhara Chowk",
+        "lat": 27.67867,
+        "lon": 85.40470
+    },
+    {
+        "name": "Sallaghari (Purano)",
+        "lat": 27.67393,
+        "lon": 85.41033
+    },
+    {
+        "name": "Sainik",
+        "lat": 27.67247,
+        "lon": 85.41334
+    },
+    {
+        "name": "Dudhpati",
+        "lat": 27.67144,
+        "lon": 85.42134
+    },
+    
+    {
+        "name": "Ratnapark",
+        "lat": 27.70685,
+        "lon": 85.31475
+    },
+    {
+        "name": "Bhadrakali",
+        "lat": 27.69971,
+        "lon": 85.31408
+    },
+    {
+        "name": "Singha Durbar",
+        "lat": 27.69741,
+        "lon": 85.32125
+    },
+   
+    {
+        "name": "Lokanthali",
+        "lat": 27.67494,
+        "lon": 85.35974
+    },
+    {
+        "name": "Kaushaltar",
+        "lat": 27.67444,
+        "lon": 85.36423
+    },
+    {
+        "name": "Gatthaghar",
+        "lat": 27.67415,
+        "lon": 85.37326
+    },
+    {
+        "name": "Chardobato",
+        "lat": 27.67356,
+        "lon": 85.37983
+    },
+    {
+        "name": "Thimi",
+        "lat": 27.67355,
+        "lon": 85.38675
+    },
+    {
+        "name": "Radhe Radhe",
+        "lat": 27.67470,
+        "lon": 85.39775
+    },
+    {
+        "name": "Srijananagar",
+        "lat": 27.67285,
+        "lon": 85.40389
+    },
+
+    {
+        "name": "Sallaghari",
+        "lat": 27.66989,
+        "lon": 85.41076
+    },
+    {
+        "name": "Chundevi",
+        "lat": 27.66682,
+        "lon": 85.41704
+    },
+    {
+        "name": "Ghalate",
+        "lat": 27.66619, 
+        "lon": 85.42005
+    },
+    {
+        "name": "Suryabinayak",
+        "lat": 27.66582,
+        "lon": 85.42477
+    },
+    {
+        "name": "Aadarsha",
+        "lat": 27.66647,
+        "lon": 85.43349
+    },
+    {
+        "name": "Jagati",
+        "lat": 27.66652,
+        "lon": 85.43647
+    },
+    {
+        "name": "Chyamasing",
+        "lat": 27.67345,
+        "lon": 85.43835
+    },
+    {
+        "name": "Kamalbinayak",
+        "lat": 27.67634,
+        "lon": 85.43722
+    },
+    {
+        "name": "Dekocha",
+        "lat": 27.67637,
+        "lon": 85.43274
+    },
+    {
+        "name": "Thulo Byasi",
+        "lat": 27.67541,
+        "lon": 85.42994
+    },
+    {
+        "name": "Sano Byasi",
+        "lat": 27.67488,
+        "lon": 85.42748
+    },
+    {
+        "name": "Kalo pati",
+        "lat": 27.67553,
+        "lon": 85.42368
+    }
+]
