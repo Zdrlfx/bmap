@@ -2,6 +2,7 @@ from rasa_sdk import Action, Tracker
 from rasa_sdk.executor import CollectingDispatcher
 from rasa_sdk.events import SlotSet
 import spacy
+from .backend.main import get_route_summary
 
 # Load spaCy model
 nlp = spacy.load("en_core_web_sm")
@@ -27,4 +28,10 @@ class ActionExtractLocations(Action):
                 destination = token.text
 
         dispatcher.utter_message(text=f"Origin: {origin}, Destination: {destination}")
+        if origin and destination:
+            # Call the function to get route summary
+            route_summary = get_route_summary(origin, destination)
+            dispatcher.utter_message(text=f"Route Summary: {route_summary}")
+        else:
+            dispatcher.utter_message(text="Could not extract origin or destination.")
         return [SlotSet("origin", origin), SlotSet("destination", destination)]
