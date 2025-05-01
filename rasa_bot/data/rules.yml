@@ -1,0 +1,7 @@
+version: "3.1"
+
+rules:
+  - rule: Handle route queries
+    steps:
+      - intent: get_route
+      - action: action_extract_locations
