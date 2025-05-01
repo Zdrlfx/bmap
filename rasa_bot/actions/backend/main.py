@@ -1,13 +1,10 @@
 import json
 import os
-from utils import get_coordinates, find_nearest_bus_stop, find_route
+from .utils import get_coordinates, find_nearest_bus_stop, find_route
 
-
-# input origin and destination
-origin = input("Enter origin: ")
-destination = input("Enter destination: ")
 def get_route_summary(origin, destination):
     associated_routes = []
+    messages = []
     is_ori_stop , is_dest_stop = False, False
 
     # check if destination is a bus stop and set destination to bus stop rasa_bot\actions\backend\routes.json
@@ -30,12 +27,12 @@ def get_route_summary(origin, destination):
             if coords:
                 nearest_stop = find_nearest_bus_stop(coords[0], coords[1], routes)
                 if nearest_stop:
-                    print(f"✅ Nearest bus stop to {destination} is {nearest_stop['name']}")
+                    messages.append(f"✅ Nearest bus stop to {destination} is {nearest_stop['name']}")
                     destination = nearest_stop['name']
                 else:
-                    print("❌ Could not find nearest bus stop from destination.")
+                    messages.append("❌ Could not find nearest bus stop from destination.")
             else:
-                print("❌ Could not find coordinates for the destination.")
+                messages.append("❌ Could not find coordinates for the destination.")
 
         # find routes containing destination 
         for route in routes:
@@ -58,19 +55,18 @@ def get_route_summary(origin, destination):
             if coords:
                 nearest_stop = find_nearest_bus_stop(coords[0], coords[1], associated_routes)
                 if nearest_stop:
-                    print(f"✅ Nearest bus stop to {origin} is {nearest_stop['name']}")
+                    messages.append(f"✅ Nearest bus stop to {origin} is {nearest_stop['name']}")
                     origin = nearest_stop['name']
                 else:
-                    print("❌ Could not find nearest bus stop from origin.")
+                    messages.append("❌ Could not find nearest bus stop from origin.")
             else:
-                print("❌ Could not find coordinates for the origin.")
+                messages.append("❌ Could not find coordinates for the origin.")
 
         # get route
         final_routes = find_route(origin, destination, routes)
-        print("Final Routes:")
+        messages.append("Final Routes:")
         for route in final_routes:
-            print(f"Route Name: {route['route_name']}")
+            messages.append(f"Route Name: {route['route_name']}")
+    
+    return "\n".join(messages)
 
-
-result = get_route_summary(origin, destination)
-print(result)
