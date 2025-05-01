@@ -1,4 +1,5 @@
 import json
+import os
 from utils import get_coordinates, find_nearest_bus_stop, find_route
 
 
@@ -9,8 +10,10 @@ def get_route_summary(origin, destination):
     associated_routes = []
     is_ori_stop , is_dest_stop = False, False
 
-    # check if destination is a bus stop and set destination to bus stop
-    with open("routes.json", 'r', encoding='utf-8') as f:
+    # check if destination is a bus stop and set destination to bus stop rasa_bot\actions\backend\routes.json
+    current_dir = os.path.dirname(os.path.abspath(__file__))
+    routes_file_path = os.path.join(current_dir, "routes.json")
+    with open(routes_file_path, 'r', encoding='utf-8') as f:
         routes = json.load(f)
         for route in routes:
             for stop in route['stops']:
