@@ -6,7 +6,7 @@ def get_route_summary(origin, destination):
     associated_routes = []
     messages = []
     is_ori_stop , is_dest_stop = False, False
-
+    messages.append(f"{origin}->{destination}")
     # check if destination is a bus stop and set destination to bus stop rasa_bot\actions\backend\routes.json
     current_dir = os.path.dirname(os.path.abspath(__file__))
     routes_file_path = os.path.join(current_dir, "routes.json")
