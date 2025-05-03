@@ -56,6 +56,10 @@ class ActionExtractLocations(Action):
         
 
         # Now decide how to respond
+        if not origin and not destination:
+            dispatcher.utter_message("I couldn't understand your route.")
+            return []
+        
         if not origin:
             dispatcher.utter_message("Where are you now?")
             return [SlotSet("origin", None), SlotSet("destination", destination)]
@@ -63,6 +67,8 @@ class ActionExtractLocations(Action):
         if not destination:
             dispatcher.utter_message("Where do you want to go?")
             return [SlotSet("origin", origin), SlotSet("destination", None)]
+        
+
 
         # Both filled — now call backend and reset
         from .backend.main import get_route_summary
