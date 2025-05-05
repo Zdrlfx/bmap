@@ -34,4 +34,12 @@ nlu:
     - in thalachen
     - at suryabinayak
 
-
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see you
+    - have a nice day
+    - bye bye
+    - talk to you later

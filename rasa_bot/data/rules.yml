@@ -5,3 +5,14 @@ rules:
     steps:
       - intent: get_route
       - action: action_extract_locations
+
+  - rule: Greet the user
+    steps:
+      - intent: greet
+      - action: utter_greet
+    
+  - rule: Say goodbye
+    steps:
+      - intent: goodbye
+      - action: utter_goodbye
+ 
