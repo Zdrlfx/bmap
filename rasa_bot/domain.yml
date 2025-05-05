@@ -3,6 +3,7 @@ version: "3.1"
 intents:
   - greet
   - get_route
+  - goodbye
 
 
 
@@ -20,7 +21,13 @@ slots:
 
 responses:
   utter_greet:
-  - text: "Hey! How are you?"
+  - text: "Hello! How can I assist you today?"
+
+  utter_goodbye:
+  - text: "Goodbye! Have a great day!"
+
+  utter_fallback:
+  - text: "I'm sorry, I didn't understand that. Can you please rephrase?"
 
 
 actions:

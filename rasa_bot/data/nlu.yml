@@ -9,7 +9,6 @@ nlu:
     - hello there
     - good morning
     - good evening
-    - moin
     - hey there
     - let's go
     - hey dude
@@ -34,4 +33,23 @@ nlu:
     - in thalachen
     - at suryabinayak
 
+- intent: goodbye
+  examples: |
+    - bye
+    - goodbye
+    - see you later
+    - see you
+    - have a nice day
+    - bye bye
+    - talk to you later
+    - no
+    - stop
 
+- intent: nlu_fallback
+  examples: |
+    - blergh
+    - the onion sings
+    - river teleports with glass
+    - what is the moon color of salt
+    - randomly formed thoughts
+    - motorcycle eats fish

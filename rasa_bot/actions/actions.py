@@ -57,7 +57,7 @@ class ActionExtractLocations(Action):
 
         # Now decide how to respond
         if not origin and not destination:
-            dispatcher.utter_message("I couldn't understand your route.")
+            dispatcher.utter_message("I couldn't get the location. Try capitalizing the first letter of the location.")
             return []
         
         if not origin:
