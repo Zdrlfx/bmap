@@ -30,11 +30,11 @@ def get_route_summary(origin, destination):
                 if nearest_stop:
                     destination = nearest_stop['name']
                 else:
-                    messages.append(f"Sorry, I could not find any nearest bus stop from {destination}.")
+                    messages.append(f"Sorry, I could not find any nearest bus stop from {destination.capitalize()}.")
                     has_route = False
                     return "\n".join(messages)
             else:
-                messages.append(f"Sorry, I could not find coordinates for {destination}.")
+                messages.append(f"Sorry, I could not find coordinates for {destination.capitalize()}.")
                 has_route = False
                 return "\n".join(messages)
 
@@ -59,23 +59,23 @@ def get_route_summary(origin, destination):
             if coords:
                 nearest_stop = find_nearest_bus_stop(coords[0], coords[1], associated_routes)
                 if nearest_stop:
-                    messages.append(f"The nearest bus stop to {origin} is {nearest_stop['name']}")
+                    messages.append(f"The nearest bus stop to {origin.capitalize()} is {nearest_stop['name']}")
                     origin = nearest_stop['name']
                 else:
-                    messages.append(f"Sorry, I could not find any nearest bus stop from {origin}.")
+                    messages.append(f"Sorry, I could not find any nearest bus stop from {origin.capitalize()}.")
                     has_route = False
             else:
-                messages.append(f"Sorry, I could not find coordinates for {origin}.")
+                messages.append(f"Sorry, I could not find coordinates for {origin.capitalize()}.")
                 has_route = False
 
         # get route
         if has_route:
             final_routes = find_route(origin, destination, routes)
-            messages.append(f"From {origin}, you can catch a bus to {destination} that follows the route:")
+            messages.append(f"From {origin.capitalize()}, you can catch a bus to {destination.capitalize()} that follows the route:")
             for route in final_routes:
                 messages.append(f"{route['route_name']}")
             if true_destination.lower() != destination.lower():
-                messages.append(f"Then, you can go to {true_destination} from {destination}.")
+                messages.append(f"Then, you can go to {true_destination.capitalize()} from {destination.capitalize()}.")
         
     return "\n".join(messages) 
 
